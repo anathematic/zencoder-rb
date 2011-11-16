@@ -4,7 +4,7 @@ module Zencoder
   mattr_writer :base_url
 
   self.api_key  = nil
-  self.base_url = 'https://app.zencoder.com/api'
+  self.base_url = 'https://app.zencoder.com/api/v2'
 
   def self.api_key
     @@api_key || ENV['ZENCODER_API_KEY']
